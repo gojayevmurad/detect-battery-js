@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "MuseoModerno", cursive;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: gray;
+}
+
+.battery {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: 0 0 30px 1px #00000066;
+  align-items: center;
+  &--level {
+    width: 40px;
+    height: 130px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: #dddddd9c;
+    border: 1px solid #ddd;
+
+    &__percent {
+      width: 100%;
+      background-color: red;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 90%;
+    }
+  }
+
+  &--detail {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__percent {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.green {
+  //70 => 100
+  background-color: green;
+}
+
+.yellow {
+  // 40 => 70
+  background-color: yellow;
+}
+
+.orange {
+  // 20 => 40
+  background-color: orange;
+}
+
+.red {
+  // 0 => 20
+  background-color: red;
+}
+
+.hide {
+  display: none;
+}

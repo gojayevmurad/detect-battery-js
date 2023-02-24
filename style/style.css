@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "MuseoModerno", cursive;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: gray;
+}
+
+.battery {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.4);
+  align-items: center;
+}
+.battery--level {
+  width: 40px;
+  height: 130px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(221, 221, 221, 0.6117647059);
+  border: 1px solid #ddd;
+}
+.battery--level__percent {
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90%;
+}
+.battery--detail {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.battery--detail__percent {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.red {
+  background-color: red;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
